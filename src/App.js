@@ -1,6 +1,8 @@
+import { BolsasFavoritas } from './components/pages';
+
 function App() {
   return (
-    <div />
+    <BolsasFavoritas />
   );
 }
 

@@ -1,0 +1,16 @@
+.header-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--blue-secondary);
+}
+
+.header-link > .header-link__icon {
+    width: 2.5rem;
+}
+
+.header-link > .header-link__text {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.3rem;
+}
