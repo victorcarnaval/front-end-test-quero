@@ -1,0 +1,10 @@
+:root {
+    --blue-primary: #18acc4;
+    --blue-secondary: #007a8d;
+    --yellow-primary: #fdcb13;
+    --yellow-secondary: #de9e1f;
+    --green: #0fa866;
+    --text-color: #1f2d30;
+    --bg-default: #fbfbfb;
+    --modal-overlay: rgba(31, 45, 48, 0.88); /* #1f2d30 */
+}
