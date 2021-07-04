@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './Button.module.css';
+import './styles.css';
 
 const ButtonTheme = {
-    primary: 'primary'
+    primary: 'button-primary'
 };
 
 const Button = ({ children, theme }) => {
-    const className = `${styles.button} ${styles[theme]}`
+    const className = `button ${ButtonTheme[theme]}`
 
     return (
         <button className={className}>
@@ -23,7 +23,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    theme: ButtonTheme.primary
+    theme: 'primary'
 };
 
 export default Button;

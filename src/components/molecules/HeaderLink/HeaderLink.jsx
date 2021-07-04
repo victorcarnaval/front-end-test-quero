@@ -17,4 +17,4 @@ const HeaderLink = ({ icon, children }) => {
     );
 }
 
-export default HeaderLink;
+export default React.memo(HeaderLink);

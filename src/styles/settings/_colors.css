@@ -7,4 +7,6 @@
     --text-color: #1f2d30;
     --bg-default: #fbfbfb;
     --modal-overlay: rgba(31, 45, 48, 0.88); /* #1f2d30 */
+
+    --border-header-link: 3px solid #eeefef;
 }

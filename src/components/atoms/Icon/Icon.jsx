@@ -17,16 +17,16 @@ const IconTitle = {
 };
 
 const IconSize = {
-    default: 16,
-    small: 12,
-    large: 20
+    default: 25,
+    small: 20,
+    large: 30
 };
 
 const Icon = ({ name, size }) => {
     const I = IconComponent[name];
 
     return (
-        <I size={size} title={IconTitle[name]} />
+        <I size={IconSize[size]} title={IconTitle[name]} />
     );
 }
 
@@ -39,4 +39,4 @@ Icon.defaultProps = {
     size: 'default'
 };
 
-export default Icon;
+export default React.memo(Icon);
