@@ -11,7 +11,7 @@
 }
 
 .header-link .header-link__text p {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bolder);
     font-size: 1.3rem;
 }
 

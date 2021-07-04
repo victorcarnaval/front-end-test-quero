@@ -1,0 +1,19 @@
+.nav-group__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-weight: var(--font-weight-bold);
+}
+
+.nav-group__item--activated {
+    background: var(--blue-secondary);
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-group__item {
+        font-size: var(--text-size);
+    }
+}

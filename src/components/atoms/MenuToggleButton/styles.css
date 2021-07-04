@@ -1,0 +1,23 @@
+.menu__toggle {
+    background: none;
+    outline: 0;
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.menu__toggle > span,
+.menu__toggle > svg {
+    vertical-align: middle;
+}
+
+.menu__toggle > span {
+    margin-right: 0.6rem;
+}
+
+@media screen and (min-width: 620px) {
+    .menu__toggle {
+        display: none;
+    }
+}
