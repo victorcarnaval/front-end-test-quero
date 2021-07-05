@@ -1,6 +1,7 @@
 .menu {
     background: var(--blue-primary);
     height: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .menu .menu__inner {

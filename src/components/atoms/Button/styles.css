@@ -1,0 +1,10 @@
+.button {
+    border: 1px solid var(--blue-secondary);
+    padding: 1.2rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--blue-secondary);
+    font-weight: var(--font-weight-bolder);
+    font-family: var(--font-family);
+    font-size: var(--text-button-size);
+    cursor: pointer;
+}

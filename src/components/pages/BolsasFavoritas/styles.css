@@ -1,0 +1,15 @@
+.bolsas-favoritas {
+}
+
+.bolsas-favoritas .bolsas-favoritas__title {
+    margin-top: 3rem;
+}
+
+.bolsas-favoritas .bolsas-favoritas__description {
+    margin-top: 1rem;
+    font-size: var(--text-size);
+}
+
+.bolsas-favoritas .bolsas-favoritas__filter {
+    margin-top: 3.5rem;
+}

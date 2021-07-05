@@ -24,3 +24,9 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
+button {
+    outline: 0;
+    background: none;
+    border: none;
+}

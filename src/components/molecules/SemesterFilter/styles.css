@@ -1,0 +1,47 @@
+.semester-filter {
+    width: 100%;
+}
+
+.semester-filter .semester-filter__button {
+    width: 100%;
+}
+
+.semester-filter .semester-filter__button.semester-filter__button--selected {
+    background: var(--blue-secondary);
+    color: var(--text-white);
+}
+
+.semester-filter .semester-filter__button:first-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.semester-filter .semester-filter__button:nth-of-type(2) {
+    border-radius: 0;
+}
+
+.semester-filter .semester-filter__button:last-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@media screen and (min-width: 620px) {
+    .semester-filter {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .semester-filter .semester-filter__button {
+        width: auto;
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .semester-filter .semester-filter__button:first-of-type {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .semester-filter .semester-filter__button:last-of-type {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+}

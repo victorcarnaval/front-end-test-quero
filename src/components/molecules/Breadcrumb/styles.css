@@ -1,0 +1,28 @@
+.breadcrumb {
+    color: var(--blue-secondary);
+    font-weight: var(--font-weight-bolder);
+    font-size: var(--small-text-size);
+}
+
+.breadcrumb .breadcrumb__icon,
+.breadcrumb .breadcrumb__item {
+    vertical-align: middle;
+}
+
+.breadcrumb .breadcrumb__icon {
+    margin-right: 0.8rem;
+}
+
+@media screen and (min-width: 960px) {
+    .breadcrumb .breadcrumb__item:not(:last-of-type)::after {
+        content: "/";
+        margin: 0 1rem;
+        font-weight: var(--font-weight-regular);
+        color: var(--text-color);
+    }
+
+    .breadcrumb .breadcrumb__item:last-of-type {
+        color: var(--text-color);
+        font-weight: var(--font-weight-bold);
+    }
+}

@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const Button = ({ children, className }) => {
+const Title = ({ children, className }) => {
 
     return (
-        <button className={`button ${className}`}>
+        <h1 className={`title ${className}`}>
             {children}
-        </button>
+        </h1>
     );
 }
 
-Button.propTypes = {
+Title.propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string
 };
 
-export default React.memo(Button);
+export default React.memo(Title);
