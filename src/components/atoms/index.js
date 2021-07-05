@@ -5,3 +5,4 @@ export { default as NavLink } from './NavLink';
 export { default as MenuToggleButton } from './MenuToggleButton';
 export { default as Title } from './Title';
 export { default as Text } from './Text';
+export { default as Card } from './Card';

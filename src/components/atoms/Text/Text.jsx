@@ -6,7 +6,7 @@ import './styles.css';
 const Text = ({ children, className }) => {
 
     return (
-        <p className={`text ${className}`}>
+        <p className={`text ${className ?? ''}`}>
             {children}
         </p>
     );

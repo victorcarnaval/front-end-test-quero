@@ -8,6 +8,7 @@
     --bg-default: #fbfbfb;
     --text-white: #fbfbfb;
     --modal-overlay: rgba(31, 45, 48, 0.88); /* #1f2d30 */
+    --box-shadow-color: #a9a9a9;
 
     --border-header-link: 3px solid #eeefef;
 }

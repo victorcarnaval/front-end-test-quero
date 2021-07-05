@@ -3,7 +3,7 @@ import React from 'react';
 import './styles.css';
 import { Title, Text } from '../../atoms';
 import { SemesterFilter } from '../../molecules';
-import { Section } from '../../organisms';
+import { Section, ScholarshipList } from '../../organisms';
 import { Layout } from '../../templates';
 
 const BolsasFavoritas = () => {
@@ -19,7 +19,10 @@ const BolsasFavoritas = () => {
                     seu interesse e receba atualizações com as
                     melhores ofertas disponíveis.
                 </Text>
+
                 <SemesterFilter className="bolsas-favoritas__filter" />
+
+                <ScholarshipList className="bolsas-favoritas__scholarship" />
             </Section>
         </Layout>
     );

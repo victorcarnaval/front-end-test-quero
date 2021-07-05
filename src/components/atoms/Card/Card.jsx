@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const Title = ({ children, className }) => {
+const Card = ({ children, className }) => {
 
     return (
-        <h1 className={`title ${className ?? ''}`}>
+        <div className={`card ${className ?? ''}`}>
             {children}
-        </h1>
+        </div>
     );
 }
 
-Title.propTypes = {
+Card.propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string
 };
 
-export default React.memo(Title);
+export default React.memo(Card);

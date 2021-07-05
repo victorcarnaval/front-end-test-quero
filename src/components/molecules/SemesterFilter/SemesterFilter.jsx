@@ -7,7 +7,7 @@ import { Button } from '../../atoms';
 const SemesterFilter = ({ className, onClick }) => {
 
     return (
-        <div className={`semester-filter ${className}`}>
+        <div className={`semester-filter ${className ?? ''}`}>
             <Button className="semester-filter__button">
                 Todos os semestres
             </Button>

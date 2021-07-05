@@ -6,7 +6,7 @@ import './styles.css';
 const Button = ({ children, className }) => {
 
     return (
-        <button className={`button ${className}`}>
+        <button className={`button ${className ?? ''}`}>
             {children}
         </button>
     );
