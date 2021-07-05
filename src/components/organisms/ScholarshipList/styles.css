@@ -1,7 +1,6 @@
 .scholarship-list {
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .scholarship-list .scholarship-list__button,
@@ -11,15 +10,23 @@
 
 @media screen and (min-width: 620px) {
     .scholarship-list {
-        align-items: stretch;
-    }
-
-    .scholarship-list .scholarship-list__button,
-    .scholarship-list .scholarship-list__item {
-        width: 27.5rem;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
     }
 
     .scholarship-list .scholarship-list__item {
         min-height: 40rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .scholarship-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .scholarship-list {
+        grid-template-columns: repeat(4, 27.5rem);
     }
 }

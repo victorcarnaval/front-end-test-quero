@@ -6,6 +6,8 @@
     --green: #0fa866;
     --text-color: #1f2d30;
     --bg-default: #fbfbfb;
+    --bg-disabled: #cacdce;
+    --text-disabled: #828a94;
     --text-white: #fbfbfb;
     --modal-overlay: rgba(31, 45, 48, 0.88); /* #1f2d30 */
     --box-shadow-color: #a9a9a9;

@@ -5,7 +5,9 @@ import './styles.css';
 import { ScholarshipButton, Scholarship } from '../../molecules';
 
 const ScholarshipList = ({ className }) => {
-    const scholarships = Array.from({ length: 3 }).fill({});
+    const scholarships = [];
+
+
 
     const handleAddScholarship = () => console.log('clicked');
 
@@ -14,7 +16,7 @@ const ScholarshipList = ({ className }) => {
             <ScholarshipButton onClick={handleAddScholarship} />
 
             {scholarships.map(
-                (item, i) => <Scholarship key={i} />
+                (item, i) => <Scholarship key={i} scholarship={item} />
             )}
         </div>
     );

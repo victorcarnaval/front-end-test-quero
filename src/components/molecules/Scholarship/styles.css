@@ -1,4 +1,147 @@
 .scholarship-list__item {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Header */
+
+.scholarship-header {
+    border-bottom: var(--border-header-link);
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.scholarship-header .scholarship-header__logo {
+    max-width: 12rem;
+    max-height: 6rem;
+}
+
+.scholarship-header .scholarship-header__university {
+    font-size: var(--small-text-size);
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.scholarship-header .scholarship-header__course {
+    font-size: var(--text-button-size);
+    font-weight: var(--font-weight-bolder);
+    color: var(--blue-secondary);
+    margin-top: 0.5rem;
+}
+
+.scholarship-header .scholarship-header__score {
+    margin-top: 1rem;
+}
+
+.scholarship-header .scholarship-header__score > span,
+.scholarship-header .scholarship-header__score > svg {
+    font-size: var(--text-button-size);
+    vertical-align: middle;
+}
+
+.scholarship-header .scholarship-header__score > span {
+    font-weight: var(--font-weight-bolder);
+    margin-right: 1rem;
+}
+
+.scholarship-header .scholarship-header__score > svg {
+    color: var(--yellow-primary);
+    margin-right: 0.5rem;
+}
+
+/* Details */
+.scholarship-details {
+    border-bottom: var(--border-header-link);
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.scholarship-details .scholarship-details__kind {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bolder);
+    text-transform: uppercase;
+}
+
+.scholarship-details .scholarship-details__start-date {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-regular);
+    margin-top: 1rem;
+}
+
+/* Price */
+.scholarship-price {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.scholarship-price p:first-of-type {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bolder);
+}
+
+.scholarship-price .scholarship-price__full {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bold);
+    margin-top: 1rem;
+    text-decoration: line-through;
+}
+
+.scholarship-price .scholarship-price__with-discount {
+    font-size: var(--text-size);
+    font-weight: var(--font-weight-bolder);
+    color: var(--green);
+}
+
+.scholarship-price .scholarship-price__with-discount > span {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color);
+}
+
+/* Message */
+.scholarship-message {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.scholarship-message p:first-of-type {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bolder);
+}
+
+.scholarship-message .scholarship-message__description {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-regular);
+    margin-top: 1rem;
+}
+
+/* Actions */
+.scholarship-actions {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.scholarship-actions > .scholarship-actions__view {
+    background: var(--yellow-primary);
+    border-color: var(--yellow-secondary);
+    color: var(--text-color);
+}
+
+.scholarship-actions > .scholarship-actions__view.scholarship-actions__view--disabled {
+    background: var(--bg-disabled);
+    border-color: #adb1b2;
+    color: var(--text-disabled);
+}
+
+.scholarship-actions > .scholarship-actions__view.scholarship-actions__view--disabled:hover {
+    cursor: not-allowed;
 }
