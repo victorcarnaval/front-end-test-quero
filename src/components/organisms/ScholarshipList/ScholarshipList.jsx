@@ -9,15 +9,20 @@ import { useScholarshipContext } from '../../../context/ScholarshipContext';
 
 const ScholarshipList = ({ className }) => {
     const { openModal } = useModalContext();
-    const { favoritesStorage } = useScholarshipContext();
+    const { favoritesStorage, semester } = useScholarshipContext();
 
     const favoritesHash = Object.keys(favoritesStorage);
+    const favoritesBySemester = favoritesHash.filter(hash => {
+        const fav = favoritesStorage[hash];
+
+        return semester === 0 || Number(fav.enrollment_semester.substring(5)) === semester;
+    });
 
     return (
         <div className={`scholarship-list ${className ?? ''}`}>
             <ScholarshipButton onClick={openModal} />
 
-            {favoritesHash.map(
+            {favoritesBySemester.map(
                 (hash, i) => (
                     <Scholarship key={i} scholarship={favoritesStorage[hash]} />
                 )

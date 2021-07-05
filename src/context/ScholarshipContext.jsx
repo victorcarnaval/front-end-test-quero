@@ -10,6 +10,7 @@ const ScholarshipProvider = ({ children }) => {
     const [favorites, setFavorites] = useState({});
     const [cities, setCities] = useState([]);
     const [courses, setCourses] = useState([]);
+    const [semester, setSemester] = useState(0);
 
     const [formValues, setFormValues] = useState({
         city: '',
@@ -114,6 +115,8 @@ const ScholarshipProvider = ({ children }) => {
         setFavorites,
         favoritesStorage,
         setFavoritesStorage,
+        semester,
+        setSemester,
         save,
         remove
     };
