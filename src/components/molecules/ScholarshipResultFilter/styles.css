@@ -1,0 +1,21 @@
+.scholarship-result-filter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.scholarship-result-filter > span:first-of-type,
+.scholarship-result-filter .scholarship-result-filter__action {
+    font-size: var(--text-button-size);
+    font-weight: var(--font-weight-bolder);
+}
+
+.scholarship-result-filter .scholarship-result-filter__action {
+    text-align: right;
+}
+
+.scholarship-result-filter .scholarship-result-filter__action > select {
+    font: inherit;
+    border: none;
+    outline: 0;
+    color: var(--blue-secondary);
+}

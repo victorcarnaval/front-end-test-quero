@@ -1,0 +1,9 @@
+.form-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-checkbox .form-checkbox__label {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-regular);
+}

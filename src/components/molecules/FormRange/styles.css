@@ -1,0 +1,16 @@
+.form-range .form-range__label {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bolder);
+    text-transform: uppercase;
+}
+
+.form-range .form-range__currency {
+    font-size: var(--text-button-size);
+    font-weight: var(--font-weight-regular);
+    text-transform: uppercase;
+}
+
+.form-range .form-range__field {
+    width: 100%;
+    margin-top: 2rem;
+}

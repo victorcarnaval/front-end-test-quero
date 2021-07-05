@@ -1,0 +1,22 @@
+.checkbox-group {
+    margin-bottom: 2rem;
+}
+
+.checkbox-group .checkbox-group__label {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bolder);
+    text-transform: uppercase;
+}
+
+.checkbox-group .checkbox-group__fields {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.checkbox-group .checkbox-group__fields .form-checkbox {
+    margin-right: 2rem;
+}
+
+.checkbox-group .checkbox-group__fields .form-checkbox .form-checkbox__field {
+    margin-right: 0.5rem;
+}

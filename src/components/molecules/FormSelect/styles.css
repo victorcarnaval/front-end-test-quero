@@ -1,0 +1,19 @@
+.form-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.form-select .form-select__label {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-weight-bolder);
+    text-transform: uppercase;
+}
+
+.form-select .form-select__field {
+    font-size: var(--text-button-size);
+    font-weight: var(--font-weight-bold);
+    padding: 1rem;
+    border: 1px solid var(--bg-disabled);
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,56 @@
+.modal-scholarship .modal-scholarship__title {
+    font-size: var(--extra-large-text-size);
+}
+
+.modal-scholarship .modal-scholarship__description {
+    font-size: var(--text-button-size);
+    font-weight: var(--font-weight-bold);
+}
+
+.modal-scholarship .modal-scholarship__form {
+    margin-top: 3rem;
+    display: grid;
+}
+
+.modal-scholarship .modal-scholarship__filter {
+    margin-top: 3rem;
+}
+
+.modal-scholarship .modal-scholarship__result {
+    margin-top: 2rem;
+}
+
+.modal-scholarship .modal-scholarship__actions {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.modal-scholarship .modal-scholarship__actions--primary {
+    background: var(--yellow-primary);
+    border-color: var(--yellow-secondary);
+    color: var(--text-color);
+}
+
+.modal-scholarship .modal-scholarship__actions--disabled {
+    background: var(--bg-disabled);
+    border-color: #adb1b2;
+    color: var(--text-disabled);
+}
+
+@media screen and (min-width: 620px) {
+    .modal-scholarship .modal-scholarship__form {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .modal-scholarship .modal-scholarship__actions {
+        justify-content: flex-end;
+    }
+
+    .modal-scholarship .modal-scholarship__actions button:first-of-type {
+        margin-right: 1.5rem;
+    }
+}

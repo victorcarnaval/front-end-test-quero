@@ -4,16 +4,15 @@ import PropTypes from 'prop-types';
 import './styles.css';
 import { ScholarshipButton, Scholarship } from '../../molecules';
 
+import { useModalContext } from '../ModalScholarship/Context';
+
 const ScholarshipList = ({ className }) => {
+    const { openModal } = useModalContext();
     const scholarships = [];
-
-
-
-    const handleAddScholarship = () => console.log('clicked');
 
     return (
         <div className={`scholarship-list ${className ?? ''}`}>
-            <ScholarshipButton onClick={handleAddScholarship} />
+            <ScholarshipButton onClick={openModal} />
 
             {scholarships.map(
                 (item, i) => <Scholarship key={i} scholarship={item} />
@@ -26,4 +25,4 @@ ScholarshipList.propTypes = {
     className: PropTypes.string
 };
 
-export default React.memo(ScholarshipList);
+export default ScholarshipList;

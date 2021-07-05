@@ -3,8 +3,11 @@ import React from 'react';
 import './styles.css';
 import { Title, Text } from '../../atoms';
 import { SemesterFilter } from '../../molecules';
-import { Section, ScholarshipList } from '../../organisms';
+import { Section, ScholarshipList, ModalScholarship } from '../../organisms';
 import { Layout } from '../../templates';
+
+import { ModalProvider } from '../../organisms/ModalScholarship/Context';
+import { ScholarshipProvider } from '../../organisms/ScholarshipList/Context';
 
 const BolsasFavoritas = () => {
 
@@ -20,9 +23,16 @@ const BolsasFavoritas = () => {
                     melhores ofertas disponíveis.
                 </Text>
 
-                <SemesterFilter className="bolsas-favoritas__filter" />
+                <ScholarshipProvider>
+                    <SemesterFilter className="bolsas-favoritas__filter" />
 
-                <ScholarshipList className="bolsas-favoritas__scholarship" />
+                    <ModalProvider>
+                        <ScholarshipList className="bolsas-favoritas__scholarship" />
+
+                        <ModalScholarship />
+                    </ModalProvider>
+                </ScholarshipProvider>
+
             </Section>
         </Layout>
     );

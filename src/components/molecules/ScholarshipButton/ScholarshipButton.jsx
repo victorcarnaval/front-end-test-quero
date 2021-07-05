@@ -5,10 +5,13 @@ import './styles.css';
 import { BsPlusCircle } from 'react-icons/bs';
 import { Card, Text } from '../../atoms';
 
-const ScholarshipButton = ({ className }) => {
+const ScholarshipButton = ({ className, onClick }) => {
 
     return (
-        <Card className={`scholarship-list__button ${className ?? ''}`}>
+        <Card
+            className={`scholarship-list__button ${className ?? ''}`}
+            onClick={onClick}
+        >
             <BsPlusCircle />
             <h3>Adicionar bolsa</h3>
             <Text>
@@ -20,7 +23,8 @@ const ScholarshipButton = ({ className }) => {
 }
 
 ScholarshipButton.propTypes = {
-    className: PropTypes.string
+    className: PropTypes.string,
+    onClick: PropTypes.func.isRequired
 };
 
 export default React.memo(ScholarshipButton);

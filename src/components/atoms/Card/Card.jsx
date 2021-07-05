@@ -3,10 +3,13 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
-const Card = ({ children, className }) => {
+const Card = ({ children, className, onClick }) => {
 
     return (
-        <div className={`card ${className ?? ''}`}>
+        <div
+            className={`card ${className ?? ''}`}
+            onClick={onClick}
+        >
             {children}
         </div>
     );
