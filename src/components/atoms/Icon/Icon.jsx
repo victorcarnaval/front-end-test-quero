@@ -1,19 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { FaRegUserCircle, FaWhatsapp } from 'react-icons/fa';
+import { FaRegUserCircle, FaWhatsapp, FaRocketchat, FaEnvelope } from 'react-icons/fa';
 import { ImInfo } from 'react-icons/im';
 
 const IconComponent = {
     user: FaRegUserCircle,
     info: ImInfo,
-    whatsapp: FaWhatsapp
+    whatsapp: FaWhatsapp,
+    chat: FaRocketchat,
+    email: FaEnvelope
 };
 
 const IconTitle = {
     user: 'Ícone do usuário',
     info: 'Ícone de ajuda',
-    whatsapp: 'Ícone do Whatsapp'
+    whatsapp: 'Ícone do Whatsapp',
+    chat: 'Ícone de Chat',
+    email: 'Ícone do E-mail'
 };
 
 const IconSize = {

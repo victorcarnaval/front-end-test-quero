@@ -1,0 +1,95 @@
+.footer {
+    background: var(--blue-primary);
+}
+
+.footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.2rem;
+}
+
+.footer .footer-content .header-link {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background: var(--blue-secondary);
+    color: var(--text-white);
+}
+
+.footer .footer-content .header-link:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .footer-content .header-link:first-of-type .header-link__icon {
+    margin-right: 1.5rem;
+}
+
+.footer .footer-content .header-link:first-of-type .header-link__text span:first-of-type {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-size);
+}
+
+.footer .footer-content .header-link:first-of-type .header-link__text span + span {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--text-size);
+}
+
+.footer .footer-content .header-link .header-link__text p {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-size);
+}
+
+.footer .footer-content .footer-content__copyright {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    color: var(--text-white);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--small-text-size);
+    padding: 3rem 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .footer .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .footer .footer-content .header-link:first-of-type {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer .footer-content .header-link:first-of-type .header-link__icon {
+        margin-right: 0;
+    }
+
+    .footer .footer-content .header-link .header-link__text p {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--text-size);
+    }
+
+    .footer .footer-content .header-link .header-link__text span:first-of-type {
+        font-weight: var(--font-weight-bolder);
+    }
+
+    .footer .footer-content .header-link .header-link__text span + span {
+        font-weight: var(--font-weight-regular);
+        font-size: var(--text-size);
+    }
+
+    .footer .footer-content .footer-content__copyright {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        color: var(--text-white);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--small-text-size);
+        padding: 5rem 0;
+    }
+}

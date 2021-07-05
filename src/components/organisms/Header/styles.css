@@ -35,12 +35,6 @@
     display: none;
 }
 
-@media screen and (min-width: 620px) {
-}
-
-@media screen and (min-width: 960px) {
-}
-
 @media screen and (min-width: 1200px) {
     .header .header__grid {
         grid-template-columns: 40rem 1fr 40rem;
