@@ -1,20 +1,13 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 import './styles.css';
 import { FormSelect, FormCheckbox, FormRange } from '../../molecules';
 
-import { useScholarshipContext } from '../ScholarshipList/Context';
+import { useScholarshipContext } from '../../../context/ScholarshipContext';
 
 const FormScholarship = ({ className }) => {
-    const { cities, courses } = useScholarshipContext();
-    const [formValues, setFormValues] = useState({
-        city: '',
-        course: '',
-        presentCourse: false,
-        onlineCourse: false,
-        maxRange: '10'
-    });
+    const { cities, courses, formValues, setFormValues } = useScholarshipContext();
 
     const createOption = (opt) => ({ id: opt, value: opt });
 

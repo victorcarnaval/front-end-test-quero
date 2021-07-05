@@ -4,18 +4,23 @@ import PropTypes from 'prop-types';
 import './styles.css';
 import { ScholarshipButton, Scholarship } from '../../molecules';
 
-import { useModalContext } from '../ModalScholarship/Context';
+import { useModalContext } from '../../../context/ModalContext';
+import { useScholarshipContext } from '../../../context/ScholarshipContext';
 
 const ScholarshipList = ({ className }) => {
     const { openModal } = useModalContext();
-    const scholarships = [];
+    const { favoritesStorage } = useScholarshipContext();
+
+    const favoritesHash = Object.keys(favoritesStorage);
 
     return (
         <div className={`scholarship-list ${className ?? ''}`}>
             <ScholarshipButton onClick={openModal} />
 
-            {scholarships.map(
-                (item, i) => <Scholarship key={i} scholarship={item} />
+            {favoritesHash.map(
+                (hash, i) => (
+                    <Scholarship key={i} scholarship={favoritesStorage[hash]} />
+                )
             )}
         </div>
     );

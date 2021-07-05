@@ -54,3 +54,24 @@
     font-weight: var(--font-weight-bolder);
     color: var(--green);
 }
+
+@media screen and (min-width: 620px) {
+    .scholarship-result-item {
+        grid-template-columns: auto 8rem auto 1fr;
+        grid-template-rows: 8rem;
+    }
+
+    .scholarship-result-item .scholarship-result-item__checkbox {
+        grid-row-end: 2;
+    }
+
+    .scholarship-result-item .scholarship-result-item__logo {
+        grid-row-end: 2;
+    }
+
+    .scholarship-result-item .scholarship-result-item__price {
+        grid-column-start: 7;
+        grid-row-start: 1;
+        text-align: right;
+    }
+}

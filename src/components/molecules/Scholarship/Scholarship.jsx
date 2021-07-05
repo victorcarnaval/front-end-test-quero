@@ -6,8 +6,14 @@ import { FaRegStar, FaStarHalfAlt, FaStar } from 'react-icons/fa';
 import { Card, Button } from '../../atoms';
 
 import { toLocaleCurrency } from '../../../utils/currency';
+import { useScholarshipContext } from '../../../context/ScholarshipContext';
 
 const Scholarship = ({ className, scholarship }) => {
+    const { remove } = useScholarshipContext();
+
+    const handleRemove = () => {
+        remove(scholarship);
+    };
 
     // Non-precision
     const renderStarsByScore = (score) => {
@@ -80,7 +86,10 @@ const Scholarship = ({ className, scholarship }) => {
             )}
 
             <div className="scholarship-actions">
-                <Button className="scholarship-actions__remove">
+                <Button
+                    className="scholarship-actions__remove"
+                    onClick={handleRemove}
+                >
                     Excluir
                 </Button>
                 {scholarship.enabled && (
@@ -89,7 +98,10 @@ const Scholarship = ({ className, scholarship }) => {
                     </Button>
                 )}
                 {!scholarship.enabled && (
-                    <Button className="scholarship-actions__view scholarship-actions__view--disabled">
+                    <Button
+                        className="scholarship-actions__view scholarship-actions__view--disabled"
+                        disabled
+                    >
                         Indisponível
                     </Button>
                 )}

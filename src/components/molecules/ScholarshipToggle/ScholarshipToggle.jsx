@@ -3,9 +3,24 @@ import PropTypes from 'prop-types';
 
 import './styles.css';
 
+import { useScholarshipContext } from '../../../context/ScholarshipContext';
 import { toLocaleCurrency } from '../../../utils/currency';
 
 const ScholarshipToggle = ({ className, scholarship }) => {
+    const { favorites, setFavorites } = useScholarshipContext();
+
+    const handleChange = (e) => {
+        const fav = { ...favorites };
+        const hash = JSON.stringify(scholarship);
+
+        if (e.target.checked) {
+            fav[hash] = scholarship;
+        } else {
+            delete fav[hash];
+        }
+
+        setFavorites(fav);
+    };
 
     return (
         <li className={`scholarship-result-item ${className ?? ''}`}>
@@ -13,6 +28,7 @@ const ScholarshipToggle = ({ className, scholarship }) => {
             <input
                 type="checkbox"
                 className="scholarship-result-item__checkbox"
+                onChange={handleChange}
             />
 
             <img

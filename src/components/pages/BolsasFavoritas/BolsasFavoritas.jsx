@@ -6,8 +6,8 @@ import { SemesterFilter } from '../../molecules';
 import { Section, ScholarshipList, ModalScholarship } from '../../organisms';
 import { Layout } from '../../templates';
 
-import { ModalProvider } from '../../organisms/ModalScholarship/Context';
-import { ScholarshipProvider } from '../../organisms/ScholarshipList/Context';
+import { ModalProvider } from '../../../context/ModalContext';
+import { ScholarshipProvider } from '../../../context/ScholarshipContext';
 
 const BolsasFavoritas = () => {
 

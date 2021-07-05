@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './styles.css';
 import { ScholarshipToggle } from '../../molecules';
 
-import { useScholarshipContext } from '../ScholarshipList/Context';
+import { useScholarshipContext } from '../../../context/ScholarshipContext';
 
 const ScholarshipResult = ({ className }) => {
     const { scholarships } = useScholarshipContext();

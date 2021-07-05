@@ -5,10 +5,17 @@ import { Button } from '../../atoms';
 import { Modal, ScholarshipResultFilter } from '../../molecules';
 import { FormScholarship, ScholarshipResult } from '..';
 
-import { useModalContext } from './Context';
+import { useModalContext } from '../../../context/ModalContext';
+import { useScholarshipContext } from '../../../context/ScholarshipContext';
 
 const ModalScholarship = () => {
     const { visible, closeModal } = useModalContext();
+    const { favorites, save } = useScholarshipContext();
+
+    const handleSubmit = () => {
+        save();
+        closeModal();
+    };
 
     return (
         <Modal
@@ -33,7 +40,11 @@ const ModalScholarship = () => {
                 <Button onClick={closeModal}>
                     Cancelar
                 </Button>
-                <Button className={true ? 'modal-scholarship__actions--disabled' : 'modal-scholarship__actions--primary'}>
+                <Button
+                    className={`modal-scholarship__actions--${Object.keys(favorites).length ? 'primary' : 'disabled'}`}
+                    onClick={handleSubmit}
+                    disabled={Object.keys(favorites).length === 0}
+                >
                     Adicionar bolsa(s)
                 </Button>
             </div>
