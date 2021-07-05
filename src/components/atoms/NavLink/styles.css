@@ -16,4 +16,10 @@
     .nav-group__item {
         font-size: var(--text-size);
     }
+
+    .nav-group__item:hover {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: var(--blue-secondary);
+    }
 }

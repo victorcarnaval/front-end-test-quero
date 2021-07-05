@@ -25,4 +25,10 @@
         color: var(--text-color);
         font-weight: var(--font-weight-bold);
     }
+
+    .breadcrumb .breadcrumb__item:hover {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        opacity: 0.9;
+    }
 }

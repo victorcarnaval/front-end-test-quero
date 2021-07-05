@@ -11,6 +11,7 @@
 .scholarship-list__button > svg {
     font-size: 6rem;
     color: var(--blue-primary);
+    transition: all 0.3s ease-in-out;
 }
 
 .scholarship-list__button > h3 {
@@ -21,4 +22,17 @@
 .scholarship-list__button > p {
     font-size: var(--text-button-size);
     text-align: center;
+}
+
+@media screen and (min-width: 620px) {
+    .scholarship-list__button {
+        min-height: 40rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .scholarship-list__button:hover > svg {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
 }
