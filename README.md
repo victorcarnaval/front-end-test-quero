@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Teste de Front End da Quero Educação
+## Bolsas favoritas
+O Querobolsa.com é um marketplace de bolsas de estudo, que já ajudou milhares de alunos a escolher e ingressar no curso ideal, por um preço que podem pagar. A sua missão é fazer uma página onde o aluno possa filtrar bolsas de estudo de seu interesse e adicionar à uma lista de bolsas favoritas.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Tech/framework utilizado
 
-In the project directory, you can run:
+<b>Desenvolvido com</b>
+- [ReactJS](https://pt-br.reactjs.org/)
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instalação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para executar o projeto em sua máquina local é necessário que o [Node](https://nodejs.org/en/) esteja instalado e configurado.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Além do Node, também é necessário que o [Git](https://nodejs.org/en/) esteja plenamente configurado pois sem ele não será possível "clonar" o projeto em seu computador.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Após configurar a sua máquina corretamente, instalando as dependências acima, iremos para o primeiro passo que é realizar o clone do projeto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Abra o terminal de seu sistema operacional, navegue até o diretório de sua preferência e execute o seguinte comando:
 
-### `yarn eject`
+`git clone https://github.com/victorcarnaval/front-end-test-quero.git`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Assim que finalizar a clonagem do repositório, você pode navegar até a raíz do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+`cd front-end-test-quero`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+O próximo passo será o processo de instalação mais demorado do projeto :/  É onde todas as dependências serão instaladas para que o React funcione e execute todo o código contido no projeto :)
+Essas dependências são instaladas através de um "gerenciador de pacotes". Abaixo estarei mostrando os scripts para ambos os gerenciadores.
 
-## Learn More
+Para baixar as dependências do projeto, execute o comando abaixo na raíz:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`yarn install` ou `yarn`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm install` ou `npm i`
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Após finalizar a instalação de todas as dependências baixa executar o script do React para "startar" o projeto.
 
-### Analyzing the Bundle Size
+`yarn start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`npm start`
