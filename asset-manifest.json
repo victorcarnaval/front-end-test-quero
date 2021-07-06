@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/front-end-test-quero/static/css/main.a067af74.chunk.css",
+    "main.js": "/front-end-test-quero/static/js/main.23f7f564.chunk.js",
+    "main.js.map": "/front-end-test-quero/static/js/main.23f7f564.chunk.js.map",
+    "runtime-main.js": "/front-end-test-quero/static/js/runtime-main.145b6588.js",
+    "runtime-main.js.map": "/front-end-test-quero/static/js/runtime-main.145b6588.js.map",
+    "static/js/2.7a72c01e.chunk.js": "/front-end-test-quero/static/js/2.7a72c01e.chunk.js",
+    "static/js/2.7a72c01e.chunk.js.map": "/front-end-test-quero/static/js/2.7a72c01e.chunk.js.map",
+    "index.html": "/front-end-test-quero/index.html",
+    "static/css/main.a067af74.chunk.css.map": "/front-end-test-quero/static/css/main.a067af74.chunk.css.map",
+    "static/js/2.7a72c01e.chunk.js.LICENSE.txt": "/front-end-test-quero/static/js/2.7a72c01e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.145b6588.js",
+    "static/js/2.7a72c01e.chunk.js",
+    "static/css/main.a067af74.chunk.css",
+    "static/js/main.23f7f564.chunk.js"
+  ]
+}
